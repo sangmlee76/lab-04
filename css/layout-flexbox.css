@@ -9,12 +9,21 @@
 
 body{
   text-align: center;
+  /* max-width: 960px; */
 }
 
 div{
   border: slateblue 1px solid;
   display: flex;
   flex-wrap: wrap;
+
+div#c-d{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+
   /* TODO: 'justify-content' is causing blocks e - h in desktop screen mode to not align properly; it is likely a combination of events but this is part of the issue */
   /* justify-content: center; */
 }
@@ -213,7 +222,8 @@ div#block-i{
 @media screen and (min-width: 769px) {
   /* Set the new block colors */
   
-   
+  
+  
   header{
     background-color: royalblue;
     height: 100px;
@@ -227,7 +237,7 @@ div#block-i{
     height: 600px;
     width: 20%;
     line-height: 600px;
-    order: -1;
+
   }
   
   div #block-c{
@@ -235,7 +245,6 @@ div#block-i{
     height: 200px;
     width: 40%;
     line-height: 200px;
-    /* order: -1; */
   }
   
   div #block-d{
@@ -243,7 +252,6 @@ div#block-i{
     height: 200px;
     width: 40%;
     line-height: 200px;
-    /* order: 1; */
   }
   
   div #block-e{
@@ -251,7 +259,7 @@ div#block-i{
     height: 250px;
     width: 20%;
     line-height: 250px;
-    /* order: 1; */
+
   }
   
   div #block-f{
@@ -259,7 +267,7 @@ div#block-i{
     height: 250px;
     width: 20%;
     line-height: 250px;
-    /* order: 1; */
+
   }
   
   div #block-g{
@@ -267,7 +275,7 @@ div#block-i{
     height: 250px;
     width: 20%;
     line-height: 250px;
-    /* order: 1; */
+
   }
   
   div #block-h{
@@ -275,7 +283,7 @@ div#block-i{
     height: 250px;
     width: 20%;
     line-height: 250px;
-    /* order: 1; */
+
   }
   
   div #block-i{
@@ -283,6 +291,6 @@ div#block-i{
     height: 150px;
     width: 80%;
     line-height: 150px;
-    /* order: 1; */
+
   }
 }

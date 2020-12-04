@@ -227,7 +227,7 @@ div#block-i{
     height: 600px;
     width: 20%;
     line-height: 600px;
-    
+    order: -1;
   }
   
   div #block-c{
@@ -235,7 +235,7 @@ div#block-i{
     height: 200px;
     width: 40%;
     line-height: 200px;
-    
+    /* order: -1; */
   }
   
   div #block-d{
@@ -243,7 +243,7 @@ div#block-i{
     height: 200px;
     width: 40%;
     line-height: 200px;
-
+    /* order: 1; */
   }
   
   div #block-e{
@@ -251,7 +251,7 @@ div#block-i{
     height: 250px;
     width: 20%;
     line-height: 250px;
-
+    /* order: 1; */
   }
   
   div #block-f{
@@ -259,7 +259,7 @@ div#block-i{
     height: 250px;
     width: 20%;
     line-height: 250px;
-
+    /* order: 1; */
   }
   
   div #block-g{
@@ -267,7 +267,7 @@ div#block-i{
     height: 250px;
     width: 20%;
     line-height: 250px;
-
+    /* order: 1; */
   }
   
   div #block-h{
@@ -275,7 +275,7 @@ div#block-i{
     height: 250px;
     width: 20%;
     line-height: 250px;
-
+    /* order: 1; */
   }
   
   div #block-i{
@@ -283,9 +283,6 @@ div#block-i{
     height: 150px;
     width: 80%;
     line-height: 150px;
-
-
+    /* order: 1; */
   }
-
-
 }

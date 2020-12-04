@@ -13,6 +13,7 @@ In lab 1, you built a web page where each box of content was rendered with a uni
 + [Responsive web design](https://learn.shayhowe.com/advanced-html-css/responsive-web-design/#viewport)
 + [CSS Media Queries](https://www.w3schools.com/css/css3_mediaqueries_ex.asp)
 + [BitDegree](https://www.bitdegree.org/learn/responsive-media)
++ [CSS-Tricks: Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background)
 
 
 ### Reflections and Comments

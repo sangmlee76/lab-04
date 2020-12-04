@@ -8,9 +8,6 @@
 /*************************************************************/
 
 body{
-  /* display: flex;
-  flex-wrap: wrap; */
-  /* flex-direction: column; */
   text-align: center;
 }
 
@@ -18,8 +15,8 @@ div{
   border: slateblue 1px solid;
   display: flex;
   flex-wrap: wrap;
-  text-align: center;
-  justify-content: center;
+  /* TODO: 'justify-content' is causing blocks e - h in desktop screen mode to not align properly; it is likely a combination of events but this is part of the issue */
+  /* justify-content: center; */
 }
 
 /*************************************************************/
@@ -169,4 +166,126 @@ div#block-i{
   div #block-i{
     background-color: rgb(89, 167, 231);
   }
+}
+
+
+/* Sets the color of the blocks for tablet screens */
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  header{
+    background-color: pink;
+  }
+  
+  div #block-b{
+    background-color: lightcoral;
+  }
+  
+  div #block-c{
+    background-color: lightpink;
+  }
+  
+  div #block-d{
+    background-color: orchid;
+  }
+  
+  div #block-e{
+    background-color: peru;
+  }
+  
+  div #block-f{
+    background-color: plum;
+  }
+  
+  div #block-g{
+    background-color: violet;
+  }
+  
+  div #block-h{
+    background-color: lightsalmon;
+  }
+  
+  div #block-i{
+    background-color: goldenrod;
+  }
+}
+
+
+/* Sets the color of the blocks for desktop screens, expands without max screen width */
+@media screen and (min-width: 769px) {
+  /* Set the new block colors */
+  
+   
+  header{
+    background-color: royalblue;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    line-height: 100px;
+  }
+  
+  div #block-b{
+    background-color: green;
+    height: 600px;
+    width: 20%;
+    line-height: 600px;
+    
+  }
+  
+  div #block-c{
+    background-color: red;
+    height: 200px;
+    width: 40%;
+    line-height: 200px;
+    
+  }
+  
+  div #block-d{
+    background-color: yellow;
+    height: 200px;
+    width: 40%;
+    line-height: 200px;
+
+  }
+  
+  div #block-e{
+    background-color: orange;
+    height: 250px;
+    width: 20%;
+    line-height: 250px;
+
+  }
+  
+  div #block-f{
+    background-color: purple;
+    height: 250px;
+    width: 20%;
+    line-height: 250px;
+
+  }
+  
+  div #block-g{
+    background-color: indianred;
+    height: 250px;
+    width: 20%;
+    line-height: 250px;
+
+  }
+  
+  div #block-h{
+    background-color: hotpink;
+    height: 250px;
+    width: 20%;
+    line-height: 250px;
+
+  }
+  
+  div #block-i{
+    background-color: darkslategray;
+    height: 150px;
+    width: 80%;
+    line-height: 150px;
+
+
+  }
+
+
 }

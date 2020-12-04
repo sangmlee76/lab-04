@@ -2,9 +2,7 @@
 
 *{
   box-sizing: border-box;
+  background-color: lightgrey;
+  width: 100%;
 }
 
-body{
-  max-width: 960px;
-  margin: auto;
-}

@@ -8,15 +8,19 @@
 /*************************************************************/
 
 body{
-  max-width: 960px;
-  margin: auto;
-}
-
-div{
-  margin: auto;
+  /* display: flex;
+  flex-wrap: wrap; */
+  /* flex-direction: column; */
   text-align: center;
 }
 
+div{
+  border: slateblue 1px solid;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
 
 /*************************************************************/
 /**************** Mobile Header (Box A) **********************/
@@ -25,9 +29,8 @@ div{
 header#block-a{
   height: 75px;
   width: 100%;
-  margin: auto;
-  text-align: center;
   line-height: 75px;
+  border: slateblue 1px solid;
 }
 
 
@@ -72,7 +75,8 @@ div#block-e{
   height: 250px;
   width: 50%;
   line-height: 250px;
-  float: left;
+  flex-shrink: 1;
+
 }
 
 
@@ -84,7 +88,8 @@ div#block-f{
   height: 250px;
   width: 50%;
   line-height: 250px;
-  float: right;
+  flex-shrink: 1;
+
 }
 
 
@@ -96,7 +101,7 @@ div#block-g{
   height: 250px;
   width: 50%;
   line-height: 250px;
-  float: left;
+
 }
 
 
@@ -108,7 +113,7 @@ div#block-h{
   height: 250px;
   width: 50%;
   line-height: 250px;
-  float: right;
+
 }
 
 
@@ -119,11 +124,8 @@ div#block-h{
 div#block-i{
   height: 80px;
   width: 100%;
-  line-height: 80px;
-  float: left;
-  
+  line-height: 80px; 
 }
-
 
 /*************************************************************/
 /********************** Media Queries ************************/
@@ -133,7 +135,7 @@ div#block-i{
 /* Sets the color of the blocks for mobile screens */
 @media screen and (max-width: 600px) {
   header{
-    background-color: lightcyan;
+    background-color: rgb(94, 192, 192);
   }
   
   div #block-b{
@@ -145,7 +147,7 @@ div#block-i{
   }
   
   div #block-d{
-    background-color: lightslategray;
+    background-color: rgb(156, 199, 241);
   }
   
   div #block-e{
@@ -165,126 +167,6 @@ div#block-i{
   }
   
   div #block-i{
-    background-color: lightgray;
+    background-color: rgb(89, 167, 231);
   }
-}
-
-/* Sets the color of the blocks for tablet screens */
-@media screen and (min-width: 601px) and (max-width: 768px) {
-  header{
-    background-color: pink;
-  }
-  
-  div #block-b{
-    background-color: lightcoral;
-  }
-  
-  div #block-c{
-    background-color: lightpink;
-  }
-  
-  div #block-d{
-    background-color: orchid;
-  }
-  
-  div #block-e{
-    background-color: peru;
-  }
-  
-  div #block-f{
-    background-color: plum;
-  }
-  
-  div #block-g{
-    background-color: violet;
-  }
-  
-  div #block-h{
-    background-color: lightsalmon;
-  }
-  
-  div #block-i{
-    background-color: goldenrod;
-  }
-}
-
-
-/* Sets the color of the blocks for desktop screens, max screen size supported is 960px */
-@media screen and (min-width: 769px) {
-  /* Set the new block colors */
-  header{
-    background-color: royalblue;
-    height: 100px;
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    line-height: 100px;
-  }
-  
-  div #block-b{
-    background-color: green;
-    height: 600px;
-    width: 20.83%;
-    line-height: 600px;
-    float: left;
-  }
-  
-  div #block-c{
-    background-color: red;
-    height: 200px;
-    width: 39.58%;
-    line-height: 200px;
-    float: left;
-  }
-  
-  div #block-d{
-    background-color: yellow;
-    height: 200px;
-    width: 39.58%;
-    line-height: 200px;
-    float: right;
-  }
-  
-  div #block-e{
-    background-color: orange;
-    height: 250px;
-    width: 19.79%;
-    line-height: 250px;
-    float: left;
-  }
-  
-  div #block-f{
-    background-color: purple;
-    height: 250px;
-    width: 19.79%;
-    line-height: 250px;
-    float: left;
-  }
-  
-  div #block-g{
-    background-color: indianred;
-    height: 250px;
-    width: 19.79%;
-    line-height: 250px;
-    float: left;
-  }
-  
-  div #block-h{
-    background-color: hotpink;
-    height: 250px;
-    width: 19.79%;
-    line-height: 250px;
-    float: left;
-  }
-  
-  div #block-i{
-    background-color: darkslategray;
-    height: 150px;
-    width: 79.17%;
-    line-height: 150px;
-    float: left;
-
-  }
-
-
 }

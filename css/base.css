@@ -1,0 +1,10 @@
+/* Universal truths about our css, things that will be true across every single html page in a site, forever */
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  max-width: 960px;
+  margin: auto;
+}
